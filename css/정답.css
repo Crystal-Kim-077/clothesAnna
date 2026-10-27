@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* =========================================================
-   안나앤모드 (annanmode) - PC 1440px
+   안나앤모드 (annanmode) - PC 1920px
    주조색 #EAE5DD / 보조색 #666, #ebebeb / 강조색 #DC143C
    ========================================================= */
 :root{
@@ -11,8 +11,8 @@
     --gray-mid: #999;
     --point: #DC143C;
     --text: #333;
-    --site-w: 1440px;
-    --inner-w: 1310px;
+    --site-w: 1920px;
+    --inner-w: 1740px;
 }
 
 body{min-width: var(--site-w);}
@@ -30,6 +30,7 @@ body{min-width: var(--site-w);}
 
 /* ---------- 탑 배너 ---------- */
 .top_banner{
+    position: relative;
     width: 100%;
     height: 55px;
     background-color: var(--main);
@@ -42,6 +43,25 @@ body{min-width: var(--site-w);}
 .top_banner strong{
     font-weight: 700;
     color: var(--point);
+}
+
+/* 탑 배너 닫기 (라인 X 아이콘) */
+.tb_close{
+    position: absolute;
+    top: 50%;
+    right: calc((100% - var(--inner-w)) / 2);
+    width: 32px;
+    height: 32px;
+    margin-top: -16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tb_close svg{
+    width: 20px;
+    height: 20px;
+    stroke: var(--text);
 }
 
 /* ---------- 헤더 ---------- */
@@ -72,7 +92,7 @@ body{min-width: var(--site-w);}
 .util{
     position: absolute;
     top: 50%;
-    right: 65px;
+    right: 90px;
     transform: translateY(-50%);
     display: flex;
     gap: 22px;
@@ -180,7 +200,7 @@ body{min-width: var(--site-w);}
 .main_slide{
     position: relative;
     width: 100%;
-    height: 800px;
+    height: 1000px;
     overflow: hidden;
 }
 
@@ -360,7 +380,7 @@ body{min-width: var(--site-w);}
 /* 좌우 버튼 : mouseenter 시 노출 */
 .cs_btn{
     position: absolute;
-    top: 154px;
+    top: 212px;
     z-index: 5;
     width: 48px;
     height: 48px;
@@ -413,13 +433,13 @@ body{min-width: var(--site-w);}
 }
 
 /* 상품 카드 */
-.card{flex: 0 0 230px;}
+.card{flex: 0 0 316px;}
 
 .card_link{display: block;}
 
 .card_thumb{
-    width: 230px;
-    height: 308px;
+    width: 316px;
+    height: 423px;
     overflow: hidden;
     background-color: #f5f5f5;
 }
@@ -482,8 +502,8 @@ body{min-width: var(--site-w);}
 .look--reverse{flex-direction: row-reverse;}
 
 .look_photo{
-    flex: 0 0 675px;
-    height: 759px;
+    flex: 0 0 900px;
+    height: 1012px;
     overflow: hidden;
 }
 
@@ -504,7 +524,7 @@ body{min-width: var(--site-w);}
 
 .page_slider{
     position: relative;
-    width: 500px;
+    width: 672px;
 }
 
 .page_slider .cs_btn{
@@ -531,7 +551,7 @@ body{min-width: var(--site-w);}
 }
 
 /* ---------- 스타일 트렌드 ---------- */
-.trend_card{flex: 0 0 295px;}
+.trend_card{flex: 0 0 405px;}
 
 .trend_id{
     display: block;
@@ -544,8 +564,8 @@ body{min-width: var(--site-w);}
 
 .trend_thumb{
     display: block;
-    width: 295px;
-    height: 369px;
+    width: 405px;
+    height: 507px;
     overflow: hidden;
     background-color: #f5f5f5;
 }
@@ -559,7 +579,7 @@ body{min-width: var(--site-w);}
 
 .trend_thumb:hover img{transform: scale(1.04);}
 
-.trend .cs_btn{top: 216px;}
+.trend .cs_btn{top: 285px;}
 
 /* ---------- 퀵 버튼 (최근 본 상품 / TOP) ---------- */
 .quick{

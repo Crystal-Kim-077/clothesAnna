@@ -1,5 +1,6 @@
 /**
  * 안나앤모드 공통 스크립트
+ * - 탑 배너 닫기
  * - GNB / 마이페이지 개별 드롭다운
  * - 메인 슬라이드 (양방향, 2초 자동 전환, 무한 반복)
  * - 카드형 슬라이드 (라인 프로그레스바, 분류 탭)
@@ -10,6 +11,16 @@
   'use strict';
 
   var GAP = 40;
+
+  /** 탑 배너: 닫기(X) 클릭 시 배너 삭제 */
+  function initTopBanner() {
+    var banner = document.querySelector('.top_banner');
+    if (!banner) return;
+
+    banner.querySelector('.tb_close').addEventListener('click', function () {
+      banner.remove();
+    });
+  }
 
   /** 개별 슬라이드다운: mouseenter 시 열고 mouseleave 시 닫기 */
   function initDropdown(selector) {
@@ -276,6 +287,7 @@
   }
 
   document.addEventListener('DOMContentLoaded', function () {
+    initTopBanner();
     initDropdown('.gnb_item.has_sub');
     initDropdown('.util_my');
     initMainSlide();
