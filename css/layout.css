@@ -1,0 +1,145 @@
+#wrap{
+    width: 1660px;
+    margin: 0 auto;
+}
+
+.logo{
+    /* 로고이미지와 박스 가로사이즈 동일하게 */
+    width: 164px;
+    margin: 0 auto;
+    /* margin-top : 전체 콘텐츠가 다 밀리기   때문에 사용불가
+       padding-top : 위쪽 여백도 같이 클릭되므로 사용불가
+       position:relaitve는 아래 형제태그도
+       전부 같이 밀어줘야 해서 안됨
+        */
+    line-height: 140px;
+    /* line-height는 자식에게 상속된다
+    ->자식에게 높이값이 생긴다
+    ->부모요소는 display block요소이다
+    ->즉 display block요소는 자식만큼 차지하는데 line-height값이 상속되면서
+    자식에게 높이값이 생기므로 부모에게 height값을 안줘도 됨 */
+}
+
+.gnb{
+    width: 980px;
+    margin: 0 auto;
+}
+
+.gnb li{
+    width: 80px;
+    margin-left: 20px;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    line-height: 50px;
+}
+
+/* 글자 스타일 제거 코드 */
+.gnb li a{text-decoration: none;}
+
+.gnb li:nth-child(1){
+    margin-left: 0;
+}
+
+.main_ad img{
+    width: 100%;
+    /* 100%는 부모기준이니까 a태그를 따라가야 함 그런데 a태그는 인라인요소이기 때문에
+    자식만큼 차지해야 함
+    ->즉, 코드가 충돌
+    ->인라인요소의 특징 때문에 퍼센트 요소가
+      적용되지 않을 때 할아버지인 display
+      block요소 기준으로 100%차지함 */
+}
+
+.sub_ad{
+    margin: 80px 0;
+    background-color: blue;
+}
+
+.sub_ad_title{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.sub_ad_title h3{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 35px;
+}
+
+.sub_ad_title p{
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.sub_ad_con li{
+    width: 316px;
+    margin-left: 20px;
+    float: left;
+}
+
+.sub_ad_con li:nth-child(1){
+    margin-left: 0;
+}
+
+.sub_ad_con li img{
+    width: 100%;
+}
+
+.sub_ad_con h4, .sub_ad_con p, .sub_ad_con span{
+    line-height: 30px;
+}
+
+.sub_ad_con h4{
+    font-size: 16px;
+    font-weight: 500;
+    color: #222;
+}
+
+.sub_ad_con p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #969696;
+}
+
+.sub_ad_con span{
+    font-size: 18px;
+    font-weight: 600;
+    color:#222;
+}
+
+.best{
+    margin-top: 110px;
+    background-color: red;
+}
+
+.best_item li{
+    width: 400px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.best_item li:nth-child(4n+1){
+    margin-left: 0;
+}
+
+.best_item li:nth-child(-n+4){
+    margin-top: 0;
+}
+
+.footer{
+    width: 1660px;
+    background-color: #ddd;
+}
+
+.footer_wrap{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.footer_wrap p{
+    font-size: 14px;
+    line-height: 25px;
+    color: #969696;
+    text-align: center;
+}

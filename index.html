@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1440">
+    <title>안나앤모드 annanmode</title>
+    <link href="css/초기화.css" rel="stylesheet" type="text/css">
+    <link href="css/정답.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- 탑 배너 -->
+    <div class="top_banner">
+        <p>가을 시즌 오프 <strong>최대 30% 할인</strong> · 신규 회원가입 시 <strong>10% 쿠폰</strong> 즉시 지급</p>
+    </div>
+
+    <!-- 전체감싸는 박스 -->
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header class="header">
+            <div class="header_top">
+                <!-- 로고 -->
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="안나앤모드 annanmode">
+                    </a>
+                </h1>
+                <!-- 유틸 아이콘 -->
+                <ul class="util">
+                    <li><a href="#none"><img src="img/header/icon_search.png" alt="검색"></a></li>
+                    <li><a href="#none"><img src="img/header/icon_cart.png" alt="장바구니"></a></li>
+                    <li class="util_my">
+                        <a href="#none"><img src="img/header/icon_user.png" alt="마이페이지"></a>
+                        <div class="util_sub">
+                            <ul class="util_sub_box">
+                                <li><a href="login.html">로그인</a></li>
+                                <li><a href="join.html">회원가입</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 메뉴 -->
+            <nav class="gnb">
+                <ul class="gnb_list">
+                    <li class="gnb_item">
+                        <a href="#none" class="gnb_link">가을NEW</a>
+                    </li>
+                    <li class="gnb_item">
+                        <a href="#none" class="gnb_link">BEST</a>
+                    </li>
+                    <li class="gnb_item has_sub">
+                        <a href="#none" class="gnb_link">ANNA MADE</a>
+                        <div class="gnb_sub">
+                            <ul>
+                                <li><a href="#none">OUTER</a></li>
+                                <li><a href="#none">TOP</a></li>
+                                <li><a href="#none">BOTTOM</a></li>
+                                <li><a href="#none">OPS/SK</a></li>
+                                <li><a href="#none">ACC</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb_item has_sub">
+                        <a href="#none" class="gnb_link">OUTER</a>
+                        <div class="gnb_sub">
+                            <ul>
+                                <li><a href="#none">코트</a></li>
+                                <li><a href="#none">자켓</a></li>
+                                <li><a href="#none">가디건</a></li>
+                                <li><a href="#none">패딩</a></li>
+                                <li><a href="#none">점퍼</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb_item has_sub">
+                        <a href="#none" class="gnb_link">TOP</a>
+                        <div class="gnb_sub">
+                            <ul>
+                                <li><a href="#none">티셔츠</a></li>
+                                <li><a href="#none">민소매</a></li>
+                                <li><a href="#none">셔츠</a></li>
+                                <li><a href="#none">블라우스</a></li>
+                                <li><a href="#none">맨투맨/후드</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb_item has_sub">
+                        <a href="#none" class="gnb_link">BOTTOM</a>
+                        <div class="gnb_sub">
+                            <ul>
+                                <li><a href="#none">바지</a></li>
+                                <li><a href="#none">슬랙스</a></li>
+                                <li><a href="#none">데님</a></li>
+                                <li><a href="#none">쇼츠</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb_item has_sub">
+                        <a href="#none" class="gnb_link">OPS/SK</a>
+                        <div class="gnb_sub">
+                            <ul>
+                                <li><a href="#none">원피스</a></li>
+                                <li><a href="#none">롱스커트</a></li>
+                                <li><a href="#none">미디스커트</a></li>
+                                <li><a href="#none">미니스커트</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb_item has_sub">
+                        <a href="#none" class="gnb_link">ACC</a>
+                        <div class="gnb_sub">
+                            <ul>
+                                <li><a href="#none">가방</a></li>
+                                <li><a href="#none">모자</a></li>
+                                <li><a href="#none">악세사리</a></li>
+                                <li><a href="#none">양말/스타킹</a></li>
+                                <li><a href="#none">목도리/장갑</a></li>
+                                <li><a href="#none">벨트</a></li>
+                                <li><a href="#none">구두</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb_item">
+                        <a href="#none" class="gnb_link">COMMUNITY</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- 메인 슬라이드 (광고배너) -->
+        <section class="main_slide">
+            <div class="ms_viewport">
+                <ul class="ms_track">
+                    <li class="ms_item ms_item--light">
+                        <a href="#none">
+                            <img src="img/slide/slide1.jpg" alt="Outerwear For Every Season">
+                            <div class="ms_text">
+                                <h2>Outerwear For Every Season</h2>
+                                <p>변화하는 계절을 위한 코트 아우터</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="ms_item">
+                        <a href="#none">
+                            <img src="img/slide/slide2.jpg" alt="Soft Layers, Easy Days">
+                            <div class="ms_text">
+                                <h2>Soft Layers, Easy Days</h2>
+                                <p>가볍게 걸치기 좋은 가을 집업 &amp; 셋업</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="ms_item ms_item--light">
+                        <a href="#none">
+                            <img src="img/slide/slide3.jpeg" alt="Knit Season Begins">
+                            <div class="ms_text">
+                                <h2>Knit Season Begins</h2>
+                                <p>포근하게 스며드는 니트 컬렉션</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="ms_btn ms_prev" aria-label="이전 슬라이드"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 4l-8 8 8 8"/></svg></button>
+            <button type="button" class="ms_btn ms_next" aria-label="다음 슬라이드"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4l8 8-8 8"/></svg></button>
+            <p class="ms_indicator"><span class="ms_current">1</span> / <span class="ms_total">3</span></p>
+        </section>
+
+        <!-- Best Items -->
+        <section class="section tab_section best">
+            <div class="inner">
+                <div class="section_title">
+                    <h2>Best Items</h2>
+                    <p>지금 가장 사랑받는 안나앤모드 베스트</p>
+                </div>
+                <ul class="tab">
+                    <li><button type="button" class="tab_btn is-active" data-cate="ALL">ALL</button></li>
+                    <li><button type="button" class="tab_btn" data-cate="OUTER">OUTER</button></li>
+                    <li><button type="button" class="tab_btn" data-cate="TOP">TOP</button></li>
+                    <li><button type="button" class="tab_btn" data-cate="BOTTOM">BOTTOM</button></li>
+                    <li><button type="button" class="tab_btn" data-cate="OPS/SK">OPS/SK</button></li>
+                    <li><button type="button" class="tab_btn" data-cate="ACC">ACC</button></li>
+                </ul>
+                <div class="card_slider">
+                    <button type="button" class="cs_btn cs_prev" aria-label="이전 상품"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 4l-8 8 8 8"/></svg></button>
+                    <div class="cs_viewport">
+                        <ul class="cs_track">
+                        <li class="card" data-cate="BOTTOM">
+                            <a href="#none" class="card_link">
+                                <div class="card_thumb"><img src="img/bestitems/best1.jpg" alt="와이드 핀턱 슬랙스"></div>
+                                <p class="card_name">와이드 핀턱 슬랙스</p>
+                                <p class="card_price"><span class="card_cost">39,000원</span></p>
+                            </a>
+                        </li>
+                        <li class="card" data-cate="OUTER">
+                            <a href="#none" class="card_link">
+                                <div class="card_thumb"><img src="img/bestitems/best2.jpg" alt="오버핏 레더 트렌치 코트"></div>
+                                <p class="card_name">오버핏 레더 트렌치 코트</p>
+                                <p class="card_price is-sale"><span class="card_rate">24%</span><span class="card_cost">98,000원</span><del class="card_origin">129,000원</del></p>
+                            </a>
+                        </li>
+                        <li class="card" data-cate="TOP">
+                            <a href="#none" class="card_link">
+                                <div class="card_thumb"><img src="img/bestitems/best3.jpg" alt="래글런 배색 롱슬리브 티셔츠"></div>
+                                <p class="card_name">래글런 배색 롱슬리브 티셔츠</p>
+                                <p class="card_price"><span class="card_cost">24,900원</span></p>
+                            </a>
+                        </li>
+                        <li class="card" data-cate="TOP">
+                            <a href="#none" class="card_link">
+                                <div class="card_thumb"><img src="img/bestitems/best4.jpg" alt="레이스 레이어드 니트 탑"></div>
+                                <p class="card_name">레이스 레이어드 니트 탑</p>
+                                <p class="card_price is-sale"><span class="card_rate">15%</span><span class="card_cost">27,200원</span><del class="card_origin">32,000원</del></p>
+                            </a>
+                        </li>
+                        <li class="card" data-cate="OPS/SK">
+                            <a href="#none" class="card_link">
+                                <div class="card_thumb"><img src="img/bestitems/best5.jpg" alt="스크립트 자수 맨투맨 & 스커트 셋업"></div>
+                                <p class="card_name">스크립트 자수 맨투맨 & 스커트 셋업</p>
+                                <p class="card_price"><span class="card_cost">59,000원</span></p>
+                            </a>
+                        </li>
+                        <li class="card" data-cate="TOP">
+                            <a href="#none" class="card_link">
+                                <div class="card_thumb"><img src="img/bestitems/best6.jpg" alt="하이넥 래글런 스웨트셔츠"></div>
+                                <p class="card_name">하이넥 래글런 스웨트셔츠</p>
+                                <p class="card_price is-sale"><span class="card_rate">20%</span><span class="card_cost">30,400원</span><del class="card_origin">38,000원</del></p>
+                            </a>
+                        </li>
+                        </ul>
+                        <p class="cs_empty">준비 중인 상품입니다.</p>
+                    </div>
+                    <button type="button" class="cs_btn cs_next" aria-label="다음 상품"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4l8 8-8 8"/></svg></button>
+                    <div class="cs_progress"><span class="cs_bar"></span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 시즌 코디 (Season Look) -->
+        <section class="season">
+            <div class="look">
+                <div class="look_photo"><img src="img/season/look1.webp" alt="화이트 브이넥 스웨트셔츠와 테니스 스커트 연출컷"></div>
+                <div class="look_con">
+                    <div class="section_title">
+                        <h2>New Active Standard</h2>
+                        <p>코트 위 가벼운 움직임을 담은 액티브 셋업</p>
+                    </div>
+                    <div class="page_slider" data-visible="2">
+                        <button type="button" class="cs_btn cs_prev" aria-label="이전 상품"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 4l-8 8 8 8"/></svg></button>
+                        <div class="cs_viewport">
+                            <ul class="cs_track">
+                            <li class="card" data-cate="TOP">
+                                <a href="#none" class="card_link">
+                                    <div class="card_thumb"><img src="img/new/new1.jpg" alt="카라 반팔 니트 탑"></div>
+                                    <p class="card_name">카라 반팔 니트 탑</p>
+                                    <p class="card_price"><span class="card_cost">34,900원</span></p>
+                                </a>
+                            </li>
+                            <li class="card" data-cate="OPS/SK">
+                                <a href="#none" class="card_link">
+                                    <div class="card_thumb"><img src="img/bestitems/best5.jpg" alt="스크립트 자수 맨투맨 & 스커트 셋업"></div>
+                                    <p class="card_name">스크립트 자수 맨투맨 & 스커트 셋업</p>
+                                    <p class="card_price"><span class="card_cost">59,000원</span></p>
+                                </a>
+                            </li>
+                            <li class="card" data-cate="OPS/SK">
+                                <a href="#none" class="card_link">
+                                    <div class="card_thumb"><img src="img/new/new2.jpg" alt="하프집업 미니 스커트 셋업"></div>
+                                    <p class="card_name">하프집업 미니 스커트 셋업</p>
+                                    <p class="card_price is-sale"><span class="card_rate">15%</span><span class="card_cost">52,700원</span><del class="card_origin">62,000원</del></p>
+                                </a>
+                            </li>
+                            <li class="card" data-cate="TOP">
+                                <a href="#none" class="card_link">
+                                    <div class="card_thumb"><img src="img/bestitems/best6.jpg" alt="하이넥 래글런 스웨트셔츠"></div>
+                                    <p class="card_name">하이넥 래글런 스웨트셔츠</p>
+                                    <p class="card_price is-sale"><span class="card_rate">20%</span><span class="card_cost">30,400원</span><del class="card_origin">38,000원</del></p>
+                                </a>
+                            </li>
+                            </ul>
+                        </div>
+                        <button type="button" class="cs_btn cs_next" aria-label="다음 상품"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4l8 8-8 8"/></svg></button>
+                        <p class="ps_indicator"><span class="ps_current">1</span> / <span class="ps_total">2</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="look look--reverse">
+                <div class="look_photo"><img src="img/season/look2.webp" alt="블랙 하이브리드 패딩과 그레이 니트 연출컷"></div>
+                <div class="look_con">
+                    <div class="section_title">
+                        <h2>Light Layers Day to Night</h2>
+                        <p>하루의 시작과 끝, 가볍게 걸치는 아우터</p>
+                    </div>
+                    <div class="page_slider" data-visible="2">
+                        <button type="button" class="cs_btn cs_prev" aria-label="이전 상품"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 4l-8 8 8 8"/></svg></button>
+                        <div class="cs_viewport">
+                            <ul class="cs_track">
+                            <li class="card" data-cate="OUTER">
+                                <a href="#none" class="card_link">
+                                    <div class="card_thumb"><img src="img/new/new6.jpg" alt="스탠드 카라 집업 자켓"></div>
+                                    <p class="card_name">스탠드 카라 집업 자켓</p>
+                                    <p class="card_price"><span class="card_cost">68,000원</span></p>
+                                </a>
+                            </li>
+                            <li class="card" data-cate="TOP">
+                                <a href="#none" class="card_link">
+                                    <div class="card_thumb"><img src="img/new/new5.jpg" alt="브이넥 울 니트 풀오버"></div>
+                                    <p class="card_name">브이넥 울 니트 풀오버</p>
+                                    <p class="card_price is-sale"><span class="card_rate">15%</span><span class="card_cost">35,700원</span><del class="card_origin">42,000원</del></p>
+                                </a>
+                            </li>
+                            <li class="card" data-cate="OUTER">
+                                <a href="#none" class="card_link">
+                                    <div class="card_thumb"><img src="img/bestitems/best2.jpg" alt="오버핏 레더 트렌치 코트"></div>
+                                    <p class="card_name">오버핏 레더 트렌치 코트</p>
+                                    <p class="card_price is-sale"><span class="card_rate">24%</span><span class="card_cost">98,000원</span><del class="card_origin">129,000원</del></p>
+                                </a>
+                            </li>
+                            <li class="card" data-cate="BOTTOM">
+                                <a href="#none" class="card_link">
+                                    <div class="card_thumb"><img src="img/new/new3.jpg" alt="골지 니트 와이드 팬츠"></div>
+                                    <p class="card_name">골지 니트 와이드 팬츠</p>
+                                    <p class="card_price"><span class="card_cost">36,000원</span></p>
+                                </a>
+                            </li>
+                            </ul>
+                        </div>
+                        <button type="button" class="cs_btn cs_next" aria-label="다음 상품"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4l8 8-8 8"/></svg></button>
+                        <p class="ps_indicator"><span class="ps_current">1</span> / <span class="ps_total">2</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New -->
+        <section class="section tab_section new">
+            <div class="inner">
+                <div class="section_title">
+                    <h2>New</h2>
+                    <p>이번 주 새로 들어온 가을 신상품</p>
+                </div>
+                <ul class="tab">
+                    <li><button type="button" class="tab_btn is-active" data-cate="ALL">ALL</button></li>
+                    <li><button type="button" class="tab_btn" data-cate="OUTER">OUTER</button></li>
+                    <li><button type="button" class="tab_btn" data-cate="TOP">TOP</button></li>
+                    <li><button type="button" class="tab_btn" data-cate="BOTTOM">BOTTOM</button></li>
+                    <li><button type="button" class="tab_btn" data-cate="OPS/SK">OPS/SK</button></li>
+                    <li><button type="button" class="tab_btn" data-cate="ACC">ACC</button></li>
+                </ul>
+                <div class="card_slider">
+                    <button type="button" class="cs_btn cs_prev" aria-label="이전 상품"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 4l-8 8 8 8"/></svg></button>
+                    <div class="cs_viewport">
+                        <ul class="cs_track">
+                        <li class="card" data-cate="TOP">
+                            <a href="#none" class="card_link">
+                                <div class="card_thumb"><img src="img/new/new1.jpg" alt="카라 반팔 니트 탑"></div>
+                                <p class="card_name">카라 반팔 니트 탑</p>
+                                <p class="card_price"><span class="card_cost">34,900원</span></p>
+                            </a>
+                        </li>
+                        <li class="card" data-cate="OPS/SK">
+                            <a href="#none" class="card_link">
+                                <div class="card_thumb"><img src="img/new/new2.jpg" alt="하프집업 미니 스커트 셋업"></div>
+                                <p class="card_name">하프집업 미니 스커트 셋업</p>
+                                <p class="card_price is-sale"><span class="card_rate">15%</span><span class="card_cost">52,700원</span><del class="card_origin">62,000원</del></p>
+                            </a>
+                        </li>
+                        <li class="card" data-cate="BOTTOM">
+                            <a href="#none" class="card_link">
+                                <div class="card_thumb"><img src="img/new/new3.jpg" alt="골지 니트 와이드 팬츠"></div>
+                                <p class="card_name">골지 니트 와이드 팬츠</p>
+                                <p class="card_price"><span class="card_cost">36,000원</span></p>
+                            </a>
+                        </li>
+                        <li class="card" data-cate="BOTTOM">
+                            <a href="#none" class="card_link">
+                                <div class="card_thumb"><img src="img/new/new4.jpg" alt="로우 라이즈 와이드 데님"></div>
+                                <p class="card_name">로우 라이즈 와이드 데님</p>
+                                <p class="card_price"><span class="card_cost">45,900원</span></p>
+                            </a>
+                        </li>
+                        <li class="card" data-cate="TOP">
+                            <a href="#none" class="card_link">
+                                <div class="card_thumb"><img src="img/new/new5.jpg" alt="브이넥 울 니트 풀오버"></div>
+                                <p class="card_name">브이넥 울 니트 풀오버</p>
+                                <p class="card_price is-sale"><span class="card_rate">15%</span><span class="card_cost">35,700원</span><del class="card_origin">42,000원</del></p>
+                            </a>
+                        </li>
+                        <li class="card" data-cate="OUTER">
+                            <a href="#none" class="card_link">
+                                <div class="card_thumb"><img src="img/new/new6.jpg" alt="스탠드 카라 집업 자켓"></div>
+                                <p class="card_name">스탠드 카라 집업 자켓</p>
+                                <p class="card_price"><span class="card_cost">68,000원</span></p>
+                            </a>
+                        </li>
+                        </ul>
+                        <p class="cs_empty">준비 중인 상품입니다.</p>
+                    </div>
+                    <button type="button" class="cs_btn cs_next" aria-label="다음 상품"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4l8 8-8 8"/></svg></button>
+                    <div class="cs_progress"><span class="cs_bar"></span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Style Trend -->
+        <section class="section trend">
+            <div class="inner">
+                <div class="section_title">
+                    <h2>Style Trend</h2>
+                    <p>@annanmode_official 과 함께한 인플루언서 스타일</p>
+                </div>
+                <div class="card_slider">
+                    <button type="button" class="cs_btn cs_prev" aria-label="이전 포스트"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 4l-8 8 8 8"/></svg></button>
+                    <div class="cs_viewport">
+                        <ul class="cs_track">
+                        <li class="trend_card">
+                            <span class="trend_id">@anna_daily</span>
+                            <a href="https://www.instagram.com/" class="trend_thumb" target="_blank" rel="noopener noreferrer">
+                                <img src="img/styleTrend/trend1.jpg" alt="@anna_daily 스타일 포스트">
+                            </a>
+                        </li>
+                        <li class="trend_card">
+                            <span class="trend_id">@mode.yuna</span>
+                            <a href="https://www.instagram.com/" class="trend_thumb" target="_blank" rel="noopener noreferrer">
+                                <img src="img/styleTrend/trend2.jpg" alt="@mode.yuna 스타일 포스트">
+                            </a>
+                        </li>
+                        <li class="trend_card">
+                            <span class="trend_id">@seoyun_look</span>
+                            <a href="https://www.instagram.com/" class="trend_thumb" target="_blank" rel="noopener noreferrer">
+                                <img src="img/styleTrend/trend3.jpg" alt="@seoyun_look 스타일 포스트">
+                            </a>
+                        </li>
+                        <li class="trend_card">
+                            <span class="trend_id">@min.style</span>
+                            <a href="https://www.instagram.com/" class="trend_thumb" target="_blank" rel="noopener noreferrer">
+                                <img src="img/styleTrend/trend4.jpg" alt="@min.style 스타일 포스트">
+                            </a>
+                        </li>
+                        <li class="trend_card">
+                            <span class="trend_id">@anna_daily</span>
+                            <a href="https://www.instagram.com/" class="trend_thumb" target="_blank" rel="noopener noreferrer">
+                                <img src="img/styleTrend/trend1.jpg" alt="@anna_daily 스타일 포스트">
+                            </a>
+                        </li>
+                        <li class="trend_card">
+                            <span class="trend_id">@mode.yuna</span>
+                            <a href="https://www.instagram.com/" class="trend_thumb" target="_blank" rel="noopener noreferrer">
+                                <img src="img/styleTrend/trend2.jpg" alt="@mode.yuna 스타일 포스트">
+                            </a>
+                        </li>
+                        <li class="trend_card">
+                            <span class="trend_id">@seoyun_look</span>
+                            <a href="https://www.instagram.com/" class="trend_thumb" target="_blank" rel="noopener noreferrer">
+                                <img src="img/styleTrend/trend3.jpg" alt="@seoyun_look 스타일 포스트">
+                            </a>
+                        </li>
+                        <li class="trend_card">
+                            <span class="trend_id">@min.style</span>
+                            <a href="https://www.instagram.com/" class="trend_thumb" target="_blank" rel="noopener noreferrer">
+                                <img src="img/styleTrend/trend4.jpg" alt="@min.style 스타일 포스트">
+                            </a>
+                        </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="cs_btn cs_next" aria-label="다음 포스트"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4l8 8-8 8"/></svg></button>
+                    <div class="cs_progress"><span class="cs_bar"></span></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="footer_inner">
+            <div class="footer_col footer_company">
+                <h2 class="footer_title">(주)안나앤모드</h2>
+                <ul>
+                    <li>대표 : 김안나 &nbsp;|&nbsp; 개인정보보호책임자 : 김안나</li>
+                    <li>사업자등록번호 : 123-45-67890 &nbsp;|&nbsp; 통신판매업신고 : 2026-서울강남-0000</li>
+                    <li>주소 : 서울특별시 강남구 테헤란로 000, 7층</li>
+                    <li>이메일 : help@annanmode.co.kr</li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h2 class="footer_title">고객센터</h2>
+                <p class="footer_tel">1588-0000</p>
+                <p>평일 10:00 - 17:00</p>
+                <p>점심 12:00 - 13:00</p>
+                <p>토 · 일 · 공휴일 휴무</p>
+            </div>
+            <div class="footer_col">
+                <h2 class="footer_title">이용안내</h2>
+                <ul>
+                    <li><a href="#none">이용약관</a></li>
+                    <li><a href="#none" class="footer_privacy">개인정보처리방침</a></li>
+                    <li><a href="#none">이용안내</a></li>
+                    <li><a href="#none">공지사항</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <p class="copyright">&copy; 2026 annanmode. All rights reserved.</p>
+            <div class="family_site">
+                <label for="familySite">패밀리사이트</label>
+                <select id="familySite" name="familySite">
+                    <option value="">선택해 주세요</option>
+                    <option value="#none">안나앤모드 맨즈</option>
+                    <option value="#none">안나앤모드 키즈</option>
+                    <option value="#none">안나앤모드 홈</option>
+                    <option value="#none">안나 아울렛</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+    <!-- 퀵 버튼 (최근 본 상품 / TOP) -->
+    <div class="quick">
+        <div class="recent_panel">
+            <h2>최근 본 상품</h2>
+            <ul class="recent_list"></ul>
+        </div>
+        <button type="button" class="quick_btn quick_recent" aria-label="최근 본 상품">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        </button>
+        <button type="button" class="quick_btn quick_top" aria-label="맨 위로">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+        </button>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
